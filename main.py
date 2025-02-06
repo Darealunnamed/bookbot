@@ -13,13 +13,13 @@ def main():
   empty_list.sort(reverse=True, key=sort_on)
 
 
-  print("--- Begin report of books/frankenstein.txt ---")
+  print("--- Begin report of books/frankenstein.txt ---\n")
   print(f"{num_words} words were found in the document\n")
 
   for item in empty_list:
     if item["char"].isalpha():
       print(f"The '{item["char"]}' character was found {item["num"]} times")
-  print("--- End report ---")
+  print("\n--- End report ---")
 
 def get_num_words(text):
   words = text.split()
